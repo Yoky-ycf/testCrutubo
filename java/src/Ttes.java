@@ -6,6 +6,13 @@ public class Ttes {
         System.out.println("hello world");
 
         System.out.println("212222");
+
+        System.out.println("new");
+    }
+
+    // tests auto commit
+    void test(){
+        System.out.println("fdsfsdfsdf");
     }
 
 }
