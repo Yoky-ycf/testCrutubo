@@ -1,0 +1,13 @@
+diff --git a/java/src/Ttes.java b/java/src/Ttes.java
+index d68dc92..06f20c7 100644
+--- a/java/src/Ttes.java
++++ b/java/src/Ttes.java
+@@ -6,6 +6,8 @@ public class Ttes {
+         System.out.println("hello world");
+ 
+         System.out.println("212222");
++
++        System.out.println("new");
+     }
+ 
+ }
