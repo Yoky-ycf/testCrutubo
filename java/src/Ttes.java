@@ -15,4 +15,9 @@ public class Ttes {
         System.out.println("fdsfsdfsdf");
     }
 
+    // tests1
+    void test1(){
+        System.out.println("tests1");
+    }
+
 }

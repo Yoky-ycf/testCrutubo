@@ -671,6 +671,10 @@ class CrucibleRest:
         Console.success('Created review %(id)s (state: %(state)s) - %(url)s/cru/%(id)s'
               % ({'id': review_id, 'state': review_state,'url':self.configuration.url}))
 
+        file = open('D:/data/test.txt','w')
+        file.write(review_id+':'+'\n')
+        file.close
+
     def add_patch_data(self, patch, request_dict={}):
         request_dict['patch'] = patch
 
