@@ -20,4 +20,8 @@ public class Ttes {
         System.out.println("tests1");
     }
 
+    void test2(){
+        System.out.println("fdfs");
+    }
+
 }
