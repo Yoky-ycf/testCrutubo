@@ -8,7 +8,7 @@ reload(sys)
 sys.setdefaultencoding('gbk')
 
 # 收集参数，第一个参数是commit的信息的文件
-commit_msg_filepath = 'sys.argv[1]'
+commit_msg_filepath = sys.argv[1]
 # 读取文件
 file = open('D:/data/test.txt','a+')
 logo = 'change'
