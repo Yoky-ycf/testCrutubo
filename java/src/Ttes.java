@@ -22,6 +22,7 @@ public class Ttes {
 
     void test2(){
         System.out.println("fdfs");
+        System.out.println("1+1");
     }
 
 }
