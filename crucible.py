@@ -22,6 +22,8 @@ import getpass
 import traceback
 import locale
 
+reload(sys)
+sys.setdefaultencoding('gbk')
 MIN_CRUCIBLE_VERSION = '3.0.0'
 SCRIPT_NAME = os.path.basename(__file__)
 SCRIPT_VERSION='0519e99e012d0bf7765001bf08dd88fd'
@@ -230,7 +232,6 @@ class Configuration(object):
 
         self.validate(check_title=get_title, check_id=get_id)
         self.initial_fill = False
-
         return self
 
     def choose_anchor(self, repositories):
@@ -671,8 +672,8 @@ class CrucibleRest:
         Console.success('Created review %(id)s (state: %(state)s) - %(url)s/cru/%(id)s'
               % ({'id': review_id, 'state': review_state,'url':self.configuration.url}))
 
-        file = open('D:/data/test.txt','w')
-        file.write(review_id+':'+'\n')
+        file = open('D:/data/test.txt','a+')
+        file.write(review_id+':'+self.configuration.title+'\n')
         file.close
 
     def add_patch_data(self, patch, request_dict={}):
